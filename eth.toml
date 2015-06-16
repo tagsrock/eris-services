@@ -1,0 +1,16 @@
+# eris service definition for tendermint
+image       = "eris/eth"
+ports       = [ "8545:8545", "30303:30303" ]
+volumes     = [ "$pwd:/root/.ethereum" ]
+environment = [  ]
+
+[maintainer]
+name = "Eris Industries"
+email = "support@erisindustries.com"
+
+[location]
+repository = "github.com/eris-ltd/eris-services"
+
+[machine]
+include = [ "docker" ]
+requires = ""
