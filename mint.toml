@@ -2,7 +2,7 @@
 # main readable config settings
 image       = "eris/mint"
 ports       = [ "46656:46656", "46657:46657" ]
-volumes     = [ "$pwd:/tendermint_root" ]
+#volumes     = [ "$pwd:/tendermint_root" ]
 environment = [ "TMROOT=/tendermint_root" ]
 
 [maintainer]

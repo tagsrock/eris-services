@@ -1,9 +1,10 @@
 # eris service definition for tendermint
-name        = "ipfs"
-image       = "eris/ipfs"
-ports       = [ "4001:4001", "5001", "8080" ]
-volumes     = [ "$eris/files/data:/data/ipfs",  "$eris/files/staging:/export"]
-environment = [  ]
+name           = "ipfs"
+image          = "eris/ipfs"
+data_container = true
+ports          = [ "4001:4001", "5001", "8080" ]
+volumes        = [ "$eris/files/staging:/export:ro" ]
+environment    = [  ]
 
 [maintainer]
 name = "Eris Industries"

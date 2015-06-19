@@ -1,8 +1,8 @@
 # eris service definition for tendermint
 # main readable config settings
-image = "eris/erisdb:cli"
+image = "eris/erisdb"
 ports = [ "30303:30303", "50505:50505" ]
-volumes = [ "$pwd:/home/eris/chain" ]
+volumes = [  ]
 environment = [  ]
 
 [maintainer]
