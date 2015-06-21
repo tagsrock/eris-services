@@ -1,4 +1,5 @@
 # eris service definition for tendermint
+[service]
 name           = "ipfs"
 image          = "eris/ipfs"
 data_container = true
@@ -15,4 +16,4 @@ repository = "github.com/eris-ltd/eris-services"
 
 [machine]
 include = [ "docker" ]
-requires = ""
+requires = [ "" ]

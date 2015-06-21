@@ -1,5 +1,6 @@
 # eris service definition for tendermint
 # main readable config settings
+[service]
 image       = "eris/mint"
 ports       = [ "46656:46656", "46657:46657" ]
 #volumes     = [ "$pwd:/tendermint_root" ]

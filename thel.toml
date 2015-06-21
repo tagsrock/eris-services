@@ -1,5 +1,6 @@
 # eris service definition for tendermint
 # main readable config settings
+[service]
 image = "eris/erisdb"
 ports = [ "30303:30303", "50505:50505" ]
 volumes = [  ]
@@ -14,4 +15,4 @@ repository = "github.com/eris-ltd/eris-services"
 
 [machine]
 include = [ "docker" ]
-requires = ""
+requires = [ "" ]

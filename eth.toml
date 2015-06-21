@@ -1,4 +1,5 @@
-# eris service definition for tendermint
+# eris service definition for ethereum
+[service]
 image       = "eris/eth"
 ports       = [ "8545:8545", "30303:30303" ]
 volumes     = [ "$pwd:/root/.ethereum" ]
