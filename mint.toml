@@ -15,4 +15,4 @@ repository = "github.com/eris-ltd/eris-services"
 
 [machine]
 include  = [ "docker" ]
-requires = ""
+requires = [ "" ]
