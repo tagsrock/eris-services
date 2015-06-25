@@ -1,0 +1,21 @@
+# eris service definition for btcd
+[service]
+name           = "keys"
+image          = "eris/keys"
+services       = [  ]
+data_container = true
+ports          = [ "4767:4767" ]
+volumes        = [  ]
+environment    = [  ]
+volumes_from   = [  ]
+
+[maintainer]
+name = "Eris Industries"
+email = "support@erisindustries.com"
+
+[location]
+repository = "github.com/eris-ltd/eris-services"
+
+[machine]
+include = [ "docker" ]
+requires = [ "" ]
