@@ -1,0 +1,19 @@
+# eris service definition for ethereum
+[service]
+name           = "eth"
+image          = "eris/eth"
+data_container = true
+ports          = [ "8545:8545", "30303:30303" ]
+volumes        = [  ]
+environment    = [  ]
+
+[maintainer]
+name = "Eris Industries"
+email = "support@erisindustries.com"
+
+[location]
+repository = "github.com/eris-ltd/eris-services"
+
+[machine]
+include = [ "docker" ]
+requires = [ "" ]
