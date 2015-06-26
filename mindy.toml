@@ -1,0 +1,17 @@
+# eris service definition for mindy
+[service]
+name           = "mindy"
+image          = "eris/mindy"
+services       = [ "mint", "tinydns" ]
+volumes_from   = [ "tinydns" ]
+
+[maintainer]
+name = "Eris Industries"
+email = "support@erisindustries.com"
+
+[location]
+repository = "github.com/eris-ltd/mindy"
+
+[machine]
+include = [ "docker" ]
+requires = [ "" ]

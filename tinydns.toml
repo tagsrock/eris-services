@@ -1,0 +1,16 @@
+# eris service definition for tinydns
+[service]
+name        = "tinydns"
+image       = "eris/tinydns"
+ports       = [ "53:53/udp" ]
+
+[maintainer]
+name  = "Eris Industries"
+email = "support@erisindustries.com"
+
+[location]
+repository = "github.com/eris-ltd/mindy"
+
+[machine]
+include  = [ "docker" ]
+requires = [ "" ]

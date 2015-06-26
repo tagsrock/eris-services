@@ -1,8 +1,9 @@
 # eris service definition for tendermint
 # main readable config settings
 [service]
-name        = "mintx"
+name        = "mint"
 image       = "eris/mint"
+data_container = true
 ports       = [ "46656", "46657" ]
 environment = [ "TMROOT=/data/tendermint" ]
 

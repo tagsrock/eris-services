@@ -1,4 +1,4 @@
-# eris service definition for btcd
+# eris service definition for keys
 [service]
 name           = "keys"
 image          = "eris/keys"
