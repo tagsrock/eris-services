@@ -1,0 +1,29 @@
+# eris service definition for btcd
+[service]
+name           = "mintx"
+image          = "eris/mint-client"
+services       = [ "keys" ]
+data_container = true
+command        = "tail -f /home/eris/.bashrc"
+entry_point    = [ "" ]
+links          = [ "eris_service_keys_1:keys" ]
+ports          = [  ]
+volumes        = [  ]
+environment    = [
+  "MINTX_SIGN_ADDR=http://keys:4767",
+  "MINTX_NODE_ADDR=http://pinkpenguin.interblock.io:46657/",
+  "MINTX_CHAINID=etcb_testnet",
+  "MINTX_PUBKEY=E23C9F4976120231C4D4DCF24C97BDC3A2D0411A787BF1A8BE6C9245D0EE6E62"
+]
+volumes_from   = [  ]
+
+[maintainer]
+name = "Eris Industries"
+email = "support@erisindustries.com"
+
+[location]
+repository = "github.com/eris-ltd/eris-services"
+
+[machine]
+include = [ "docker" ]
+requires = [ "" ]
