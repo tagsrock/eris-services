@@ -3,9 +3,9 @@
 name           = "keys"
 image          = "eris/keys"
 services       = [  ]
-data_container = true
+data_container = false
 ports          = [ "4767:4767" ]
-volumes        = [  ]
+volumes        = [ "$eris/keys:/home/eris/.eris/keys:ro" ]
 environment    = [  ]
 volumes_from   = [  ]
 
