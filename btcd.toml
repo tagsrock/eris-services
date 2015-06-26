@@ -1,0 +1,19 @@
+# eris service definition for btcd
+[service]
+name           = "btcd"
+image          = "kylemanna/bitcoind"
+data_container = true
+ports          = [ "6881:6881", "6882:6882", "8333:8333", "127.0.0.1:8332:8332" ]
+volumes        = [  ]
+environment    = [  ]
+
+[maintainer]
+name = "Eris Industries"
+email = "support@erisindustries.com"
+
+[location]
+repository = "github.com/eris-ltd/eris-services"
+
+[machine]
+include = [ "docker" ]
+requires = [ "" ]
