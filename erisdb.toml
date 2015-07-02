@@ -1,14 +1,13 @@
-
-# main readable config settings
 [service]
-image       = "eris/erisdb"
+name        = "erisdb"
+image       = "eris/mint"
 ports       = [ "46656:46656", "46657:46657" ]
 environment = [ "TMROOT=/data/tendermint" ]
 
 [manager]
-start = "./start run"
-fetch = "./start fetch"
-new = "./start new"
+fetch = "./build/tendermint node --fast_sync" # we'd like this to stop when caught up!
+start = "./build/tendermint node"
+new = "./build/tendermint node && last_pid=$! && sleep(1) && kill -KILL $last_pid"
 
 [maintainer]
 name  = "Eris Industries"
