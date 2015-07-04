@@ -1,9 +1,9 @@
 # eris service definition for btcd
 [service]
 name           = "btcd"
-image          = "kylemanna/bitcoind"
+image          = "eris/btcd"
 data_container = true
-ports          = [ "6881:6881", "6882:6882", "8333:8333", "127.0.0.1:8332:8332" ]
+ports          = [ "8333:8333", "8334:8334", "8333:8333" ]
 volumes        = [  ]
 environment    = [  ]
 
