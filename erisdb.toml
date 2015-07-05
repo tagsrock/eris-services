@@ -1,8 +1,8 @@
 [service]
-name	    = "erisdb"
-image 	    = "eris/erisdb:develop"
-ports       = [ "46656", "46657" ]
-environment = [ "TMROOT=/data/tendermint", "NODE_ADDR=http://pinkpenguin.interblock.io:46657"]
+name           = "erisdb"
+image          = "eris/erisdb:develop"
+ports          = [ "46656:46656", "46657:46657" ]
+environment    = [ "TMROOT=/home/eris/.eris/blockchains/tendermint", "NODE_ADDR=http://pinkpenguin.interblock.io:46657"]
 data_container = true
 
 [maintainer]

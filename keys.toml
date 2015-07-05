@@ -1,21 +1,10 @@
-# eris service definition for keys
 [service]
-name           = "keys"
-image          = "eris/keys"
-services       = [  ]
-data_container = false
-ports          = [ "4767:4767" ]
-volumes        = [ "$eris/keys:/home/eris/.eris/keys:ro" ]
-environment    = [  ]
-volumes_from   = [  ]
+name = "keys"
+image = "eris/keys"
+data_container = true
 
 [maintainer]
-name = "Eris Industries"
-email = "support@erisindustries.com"
 
 [location]
-repository = "github.com/eris-ltd/eris-services"
 
 [machine]
-include = [ "docker" ]
-requires = [ "" ]
