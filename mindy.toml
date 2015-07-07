@@ -2,7 +2,7 @@
 [service]
 name           = "mindy"
 image          = "eris/mindy"
-services       = [ "mint", "tinydns" ]
+services       = [ "etcb_testnet", "tinydns" ]
 volumes_from   = [ "tinydns" ]
 
 [maintainer]
