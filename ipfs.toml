@@ -1,3 +1,5 @@
+name = "ipfs"
+
 [service]
 name = "ipfs"
 image = "eris/ipfs"
