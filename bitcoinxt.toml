@@ -1,9 +1,10 @@
-# eris service definition for btcd
+# eris service definition for bitcoinxt
+name           = "bitcoinxt"
+
 [service]
-name           = "btcd"
-image          = "eris/btcd"
+image          = "erisindustries/bitcoinxt"
 data_container = true
-ports          = [ "8333:8333", "8334:8334" ]
+ports          = [ "8333:8333", "8332:8332" ]
 volumes        = [  ]
 environment    = [  ]
 cpu_shares     = 10
