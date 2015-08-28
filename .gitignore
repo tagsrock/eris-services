@@ -22,3 +22,5 @@ _testmain.go
 *.exe
 *.test
 *.prof
+
+do_not_use.toml
