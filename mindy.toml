@@ -1,9 +1,13 @@
+
+chain 	       = "$chain"
+
 # eris service definition for mindy
 [service]
 name           = "mindy"
 image          = "eris/mindy"
-services       = [ "etcb_testnet", "tinydns" ]
-volumes_from   = [ "tinydns" ]
+
+[services]
+dependencies = ["tinydns"]
 
 [maintainer]
 name = "Eris Industries"

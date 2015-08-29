@@ -3,6 +3,7 @@
 name        = "tinydns"
 image       = "eris/tinydns"
 ports       = [ "53:53/udp" ]
+data_container = true
 
 [maintainer]
 name  = "Eris Industries"
