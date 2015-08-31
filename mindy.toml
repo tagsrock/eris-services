@@ -1,13 +1,14 @@
 
-chain 	       = "$chain"
+chain 	       = "$chain:mint:l"
 
 # eris service definition for mindy
 [service]
 name           = "mindy"
 image          = "eris/mindy"
+environment    = [ "UPDATE_EVERY=5" ]
 
 [services]
-dependencies = ["tinydns"]
+dependencies = ["tinydns::v"]
 
 [maintainer]
 name = "Eris Industries"
