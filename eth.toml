@@ -5,7 +5,13 @@ image          = "eris/eth"
 data_container = true
 ports          = [ "8545:8545", "30303:30303" ]
 volumes        = [  ]
-environment    = [  ]
+environment    = [
+  "ACCOUNT=0",
+  "CHAIN_ID=ethereum",
+  "LOG_LEVEL=2",
+  "MAKEACCT=true",
+  "PASSWORD=whatever"
+]
 
 [maintainer]
 name = "Eris Industries"
