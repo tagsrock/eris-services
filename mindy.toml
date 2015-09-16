@@ -7,8 +7,8 @@ name           = "mindy"
 image          = "eris/mindy"
 environment    = [ "UPDATE_EVERY=5" ]
 
-[services]
-dependencies = ["tinydns::v"]
+[dependencies]
+services = ["tinydns::v"]
 
 [maintainer]
 name = "Eris Industries"
