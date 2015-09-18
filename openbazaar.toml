@@ -1,0 +1,25 @@
+name = "openbazaar"
+
+[service]
+name = "openbazaar"
+image = "quay.io/eris/openbazaar:latest"
+data_container = true
+#command = "/sbin/my_init"
+host_name = "ob"
+ports = ["8888:8888", "12345:12345"]
+expose = ["9300"]
+environment = [ "RUNSH_ARGS=--disable-upnp -q 8888 -p 12345" ]
+
+#[dependencies]
+#services = ["ob-elk"]
+
+[maintainer]
+name = "Eris Industries"
+email = "support@erisindustries.com"
+
+[location]
+repository = "github.com/eris-ltd/eris-services"
+
+[machine]
+requires = ["docker"]
+include = [""]
