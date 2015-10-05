@@ -1,5 +1,5 @@
-[service]
 name = "keys"
 
-image = "eris/keys"
+[service]
+image = "quay.io/eris/keys"
 data_container = true
