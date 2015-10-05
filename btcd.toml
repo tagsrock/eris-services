@@ -1,7 +1,8 @@
 # eris service definition for btcd
-[service]
 name           = "btcd"
-image          = "eris/btcd"
+
+[service]
+image          = "quay.io/eris/btcd"
 data_container = true
 ports          = [ "8333:8333", "8334:8334" ]
 volumes        = [  ]

@@ -1,6 +1,7 @@
-[service]
 name           = "mint"
-image          = "eris/mint"
+
+[service]
+image          = "quay.io/eris/mint"
 ports          = [ "46656:46656", "46657:46657" ]
 environment    = [ "TMROOT=/home/eris/.eris/blockchains/tendermint" ]
 data_container = true
