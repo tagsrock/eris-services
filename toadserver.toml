@@ -1,0 +1,33 @@
+name = "toadserver"
+
+# NOTE: this definition file is a WIP
+# and requires modification to work properly
+# please see forthcoming tutorial
+
+[service]
+name = "toadserver"
+image = "quay.io/eris/toadserver"
+ports = [ "11113:11113" ]
+volumes = [  ]
+environment = [  
+	"MINTX_NODE_ADDR=http://eris_chain_toadserver_1:46657/",
+	"MINTX_CHAINID=toadserver", 
+	"MINTX_SIGN_ADDR=http://keys:4767", 
+	"MINTX_PUBKEY=8D739AF957475A8F2430231B6355AD6A0823B2DE3EEEFE4769449848E62E05E2",
+	"ERIS_IPFS_HOST=http://ipfs"
+]
+
+[dependencies]
+services = [ "ipfs", "keys" ]
+#chain = "$chain" //TODO get this working
+
+[maintainer]
+name = "Eris Industries"
+email = "support@erisindustries.com"
+
+[location]
+repository = "github.com/eris-ltd/toadserver"
+
+[machine]
+include = [ "docker" ]
+requires = [ "" ]
