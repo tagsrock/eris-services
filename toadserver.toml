@@ -1,8 +1,13 @@
 name = "toadserver"
+chain = "$chain:toad:l"
 
 # NOTE: this definition file is a WIP
 # and requires modification to work properly
-# please see forthcoming tutorial
+# please see README/tutorial in repo
+
+# both MINT_CHAINID and MINTX_PUBKEY
+# need to be hardcoded. see test.sh
+# in repo for more info
 
 [service]
 name = "toadserver"
@@ -10,16 +15,15 @@ image = "quay.io/eris/toadserver"
 ports = [ "11113:11113" ]
 volumes = [  ]
 environment = [  
-	"MINTX_NODE_ADDR=http://eris_chain_toadserver_1:46657/",
-	"MINTX_CHAINID=toadserver", 
-	"MINTX_SIGN_ADDR=http://keys:4767", 
-	"MINTX_PUBKEY=8D739AF957475A8F2430231B6355AD6A0823B2DE3EEEFE4769449848E62E05E2",
+	"MINTX_NODE_ADDR=http://toad:46657/",
+	"MINTX_CHAINID=$CHAIN_NAME", 
+	"MINTX_SIGN_ADDR=http://eris_service_keys_1:4767", 
+	"MINTX_PUBKEY=$PUB_KEY",
 	"ERIS_IPFS_HOST=http://ipfs"
 ]
 
 [dependencies]
 services = [ "ipfs", "keys" ]
-#chain = "$chain" //TODO get this working
 
 [maintainer]
 name = "Eris Industries"
