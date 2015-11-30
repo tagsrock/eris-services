@@ -17,7 +17,7 @@ volumes = [  ]
 environment = [  
 	"MINTX_NODE_ADDR=http://toad:46657/",
 	"MINTX_CHAINID=$CHAIN_NAME", 
-	"MINTX_SIGN_ADDR=http://eris_service_keys_1:4767", 
+	"MINTX_SIGN_ADDR=http://keys:4767", 
 	"MINTX_PUBKEY=$PUB_KEY",
 	"ERIS_IPFS_HOST=http://ipfs"
 ]
