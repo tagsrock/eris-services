@@ -1,0 +1,22 @@
+name = "ipfs"
+
+[service]
+name = "ipfs"
+image = "quay.io/eris/ipfs"
+data_container = true
+ports = ["4001:4001", "5001:5001", "8080:8080"]
+user = "root"
+
+[dependencies]
+services = ["keys"]
+
+[maintainer]
+name = "Eris Industries"
+email = "support@erisindustries.com"
+
+[location]
+repository = "github.com/eris-ltd/eris-services"
+
+[machine]
+include = ["docker"]
+requires = [""]
