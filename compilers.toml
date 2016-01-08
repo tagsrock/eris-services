@@ -1,0 +1,20 @@
+# eris service definition for ethereum
+name           = "compilers"
+
+[service]
+image          = "quay.io/eris/compilers"
+data_container = true
+ports          = [ "9090:9098", "9091:9099" ]
+volumes        = [  ]
+environment    = [ "SECURE_PORT=9098", "UNSECURE_PORT=9099" ]
+
+[maintainer]
+name = "Eris Industries"
+email = "support@erisindustries.com"
+
+[location]
+repository = "github.com/eris-ltd/eris-services"
+
+[machine]
+include = [ "docker" ]
+requires = [ "" ]
