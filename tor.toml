@@ -1,0 +1,27 @@
+# This is a TOML config file.
+# For more information, see https://github.com/toml-lang/toml
+
+# Based on https://blog.jessfraz.com/post/running-a-tor-relay-with-docker/
+
+name = "tor"
+
+[service]
+name = "tor"
+image = "quay.io/eris/tor-relay"
+ports = [ "9001:9001" ]
+data_container = false
+volumes = [ "/etc/localtime:/etc/localtime" ]
+
+# replace 'exit' with 'bridge' or 'middle'
+# depending on the type of relay you'd like to run
+command = "-f /etc/tor/torrc.exit"
+
+[dependencies]
+
+[maintainer]
+name = "Zach Ramsay"
+email = "zach@erisindustries.com"
+
+[location]
+
+[machine]
