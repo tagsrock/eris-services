@@ -1,4 +1,4 @@
-# eris service definition for ethereum
+# eris service definition for compilers
 name           = "compilers"
 
 [service]
@@ -13,7 +13,7 @@ name = "Eris Industries"
 email = "support@erisindustries.com"
 
 [location]
-repository = "github.com/eris-ltd/eris-services"
+repository = "github.com/eris-ltd/eris-compilers"
 
 [machine]
 include = [ "docker" ]
