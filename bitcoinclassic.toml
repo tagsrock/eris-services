@@ -1,8 +1,8 @@
 # eris service definition for btcd
-name           = "bitcoincore"
+name           = "bitcoinclassic"
 
 [service]
-image          = "quay.io/eris/bitcoincore"
+image          = "quay.io/eris/bitcoinclassic"
 data_container = true
 ports          = [ "8333:8333", "8334:8334" ]
 volumes        = [  ]
