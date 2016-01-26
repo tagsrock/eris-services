@@ -1,3 +1,12 @@
+# Eris service definition for tor
+# Start it with `$ eris services start tor`
+
+# For more information on configurations, see the services specification:
+# https://docs.erisindustries.com/documentation/eris-cli/latest/services_specification/
+
+# These fields marshal roughly into the `$ docker run` command, see:
+# https://docs.docker.com/engine/reference/run/
+
 # This is a TOML config file.
 # For more information, see https://github.com/toml-lang/toml
 

@@ -1,7 +1,17 @@
+# Eris service definition for mindy
+# Start it with `$ eris services start mindy`
+
+# For more information on configurations, see the services specification:
+# https://docs.erisindustries.com/documentation/eris-cli/latest/services_specification/
+
+# These fields marshal roughly into the `$ docker run` command, see:
+# https://docs.docker.com/engine/reference/run/
+
+# This is a TOML config file.
+# For more information, see https://github.com/toml-lang/toml
 
 chain 	       = "$chain:mint:l"
 
-# eris service definition for mindy
 [service]
 name           = "mindy"
 image          = "eris/mindy"
@@ -11,8 +21,8 @@ environment    = [ "UPDATE_EVERY=5" ]
 services = ["tinydns::v"]
 
 [maintainer]
-name = "Eris Industries"
-email = "support@erisindustries.com"
+name = "Ethan Buchman"
+email = "ethan@erisindustries.com"
 
 [location]
 repository = "github.com/eris-ltd/mindy"

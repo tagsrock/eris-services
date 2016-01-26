@@ -1,3 +1,15 @@
+# Eris service definition for openbazaar
+# Start it with `$ eris services start openbazaar`
+
+# For more information on configurations, see the services specification:
+# https://docs.erisindustries.com/documentation/eris-cli/latest/services_specification/
+
+# These fields marshal roughly into the `$ docker run` command, see:
+# https://docs.docker.com/engine/reference/run/
+
+# This is a TOML config file.
+# For more information, see https://github.com/toml-lang/toml
+
 name = "openbazaar"
 
 [service]
@@ -18,7 +30,7 @@ name = "Eris Industries"
 email = "support@erisindustries.com"
 
 [location]
-repository = "github.com/eris-ltd/eris-services"
+repository = "github.com/eris-ltd/common/blob/master/docker/openbazaar/build.sh"
 
 [machine]
 requires = ["docker"]
