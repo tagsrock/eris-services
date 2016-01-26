@@ -1,5 +1,14 @@
-name = "toadserver"
-chain = "$chain:toad:l"
+# Eris service definition for toadserver
+# Start it with `$ eris services start toadserver`
+
+# For more information on configurations, see the services specification:
+# https://docs.erisindustries.com/documentation/eris-cli/latest/services_specification/
+
+# These fields marshal roughly into the `$ docker run` command, see:
+# https://docs.docker.com/engine/reference/run/
+
+# This is a TOML config file.
+# For more information, see https://github.com/toml-lang/toml
 
 # NOTE: this definition file is a WIP
 # and requires modification to work properly
@@ -8,6 +17,9 @@ chain = "$chain:toad:l"
 # both MINT_CHAINID and MINTX_PUBKEY
 # need to be hardcoded. see test.sh
 # in repo for more info
+
+name = "toadserver"
+chain = "$chain:toad:l"
 
 [service]
 name = "toadserver"
@@ -19,15 +31,16 @@ environment = [
 	"MINTX_CHAINID=$CHAIN_NAME", 
 	"MINTX_SIGN_ADDR=http://keys:4767", 
 	"MINTX_PUBKEY=$PUB_KEY",
-	"ERIS_IPFS_HOST=http://ipfs"
+	"ERIS_IPFS_HOST=http://ipfs",
+	"TOADSERVER_IPFS_NODES=ip1,ip2,ip3"
 ]
 
 [dependencies]
 services = [ "ipfs", "keys" ]
 
 [maintainer]
-name = "Eris Industries"
-email = "support@erisindustries.com"
+name = "Zach Ramsay"
+email = "zach@erisindustries.com"
 
 [location]
 repository = "github.com/eris-ltd/toadserver"

@@ -1,6 +1,21 @@
+# Eris service definition for keys
+# Start it with `$ eris services start keys`
+
+# For more information on configurations, see the services specification:
+# https://docs.erisindustries.com/documentation/eris-cli/latest/services_specification/
+
+# These fields marshal roughly into the `$ docker run` command, see:
+# https://docs.docker.com/engine/reference/run/
+
+# This is a TOML config file.
+# For more information, see https://github.com/toml-lang/toml
+
 name = "keys"
 
 [service]
 image = "quay.io/eris/keys"
 data_container = true
 exec_host = "ERIS_KEYS_HOST"
+
+[location]
+repository = "github.com/eris-ltd/common/blob/master/docker/keys/build.sh"

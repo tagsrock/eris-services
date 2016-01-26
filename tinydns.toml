@@ -1,4 +1,15 @@
-# eris service definition for tinydns
+# Eris service definition for tinydns
+# Start it with `$ eris services start tinydns`
+
+# For more information on configurations, see the services specification:
+# https://docs.erisindustries.com/documentation/eris-cli/latest/services_specification/
+
+# These fields marshal roughly into the `$ docker run` command, see:
+# https://docs.docker.com/engine/reference/run/
+
+# This is a TOML config file.
+# For more information, see https://github.com/toml-lang/toml
+
 [service]
 name        = "tinydns"
 image       = "eris/tinydns"
@@ -6,11 +17,11 @@ ports       = [ "53:53/udp" ]
 data_container = true
 
 [maintainer]
-name  = "Eris Industries"
-email = "support@erisindustries.com"
+name  = "Ethan Buchman"
+email = "ethan@erisindustries.com"
 
 [location]
-repository = "github.com/eris-ltd/mindy"
+repository = "github.com/eris-ltd/mindy/tree/master/tinydns"
 
 [machine]
 include  = [ "docker" ]
