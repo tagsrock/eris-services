@@ -10,11 +10,11 @@
 # This is a TOML config file.
 # For more information, see https://github.com/toml-lang/toml
 
-chain 	       = "$chain:mint:l"
+chain 	       = "$chain:chain:l"
 
 [service]
 name           = "mindy"
-image          = "eris/mindy"
+image          = "quay.io/eris/mindy"
 environment    = [ "UPDATE_EVERY=5" ]
 
 [dependencies]
