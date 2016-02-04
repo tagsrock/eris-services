@@ -29,5 +29,3 @@ email = "casey@erisindustries.com"
 
 [location]
 repository = "github.com/gliderlabs/logspout"
-
-[machine]

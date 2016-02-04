@@ -26,7 +26,3 @@ email = "ethan@erisindustries.com"
 
 [location]
 repository = "github.com/eris-ltd/mindy"
-
-[machine]
-include = [ "docker" ]
-requires = [ "" ]

@@ -25,12 +25,6 @@ volumes = [ "/etc/localtime:/etc/localtime" ]
 # depending on the type of relay you'd like to run
 command = "-f /etc/tor/torrc.exit"
 
-[dependencies]
-
 [maintainer]
 name = "Zach Ramsay"
 email = "zach@erisindustries.com"
-
-[location]
-
-[machine]

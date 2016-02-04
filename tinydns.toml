@@ -22,7 +22,3 @@ email = "ethan@erisindustries.com"
 
 [location]
 repository = "github.com/eris-ltd/mindy/tree/master/tinydns"
-
-[machine]
-include  = [ "docker" ]
-requires = [ "" ]

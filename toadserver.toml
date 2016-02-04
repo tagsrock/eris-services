@@ -44,7 +44,3 @@ email = "zach@erisindustries.com"
 
 [location]
 repository = "github.com/eris-ltd/toadserver"
-
-[machine]
-include = [ "docker" ]
-requires = [ "" ]

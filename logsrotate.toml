@@ -26,5 +26,3 @@ email = "casey@erisindustries.com"
 
 [location]
 repository = "github.com/tutumcloud/logrotate"
-
-[machine]

@@ -31,7 +31,3 @@ email = "support@erisindustries.com"
 
 [location]
 repository = "github.com/eris-ltd/common/blob/master/docker/eth/Dockerfile"
-
-[machine]
-include = [ "docker" ]
-requires = [ "" ]
