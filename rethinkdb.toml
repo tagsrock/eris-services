@@ -1,0 +1,22 @@
+# This is a TOML config file.
+# For more information, see https://github.com/toml-lang/toml
+#
+# handles lines 1-13 of bcdb docker-compose.yml
+
+name = "rethinkdb"
+
+[service]
+name = "rethinkdb"
+image = "rethinkdb"
+ports = [ "9999:8080", "28015"]
+#volumes_from = [ "/data" ] #needs absolute path or something ... ?
+data_container = true
+
+
+[dependencies]
+
+[maintainer]
+name = "Zach Ramsay"
+email = "zach@erisindustries.com"
+
+[location]
