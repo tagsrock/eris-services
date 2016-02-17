@@ -17,6 +17,7 @@ image = "quay.io/eris/ipfs"
 data_container = true
 ports = ["4001:4001", "5001:5001", "8080:8080"]
 user = "root"
+exec_host = "ERIS_IPFS_HOST"
 
 [maintainer]
 name = "Eris Industries"
