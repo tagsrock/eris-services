@@ -1,6 +1,3 @@
-# Eris service definition for toadserver
-# Start it with `$ eris services start toadserver`
-
 # For more information on configurations, see the services specification:
 # https://docs.erisindustries.com/documentation/eris-cli/latest/services_specification/
 
@@ -19,6 +16,12 @@
 # in repo for more info
 
 name = "toadserver"
+description = """
+A smart contract and IPFS Backed File Server. It is used internally as part of the `eris init` sequence.
+"""
+
+status = "alpha"
+
 chain = "$chain:toad:l"
 
 [service]
@@ -34,6 +37,7 @@ environment = [
 	"ERIS_IPFS_HOST=http://ipfs",
 	"TOADSERVER_IPFS_NODES=ip1,ip2,ip3"
 ]
+restart = "always"
 
 [dependencies]
 services = [ "ipfs", "keys" ]
@@ -43,8 +47,6 @@ name = "Zach Ramsay"
 email = "zach@erisindustries.com"
 
 [location]
-repository = "github.com/eris-ltd/toadserver"
-
-[machine]
-include = [ "docker" ]
-requires = [ "" ]
+dockerfile = "https://github.com/eris-ltd/toadserver/blob/master/Dockerfile" 
+repository = "https://github.com/eris-ltd/toadserver"
+website = ""

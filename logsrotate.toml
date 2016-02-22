@@ -11,12 +11,24 @@
 # For more information, see https://github.com/toml-lang/toml
 
 name = "logrotate"
+description = """
+Truncates docker container logs when the grow in size.
+
+This eris service can also be run by adding the `--logsrotate` flag on `eris chains new | start`
+
+It is basically essential for long-running chain nodes.
+
+Alternatively, use logspout to pipe logs to a service of you choosing"
+"""
+
+status = "ready"
 
 [service]
 name = "logrotate"
 image = "tutum/logrotate"
 data_container = false
 volumes = [ "/var/lib/docker/containers:/var/lib/docker/containers:rw" ]
+restart = "always"
 
 [dependencies]
 
@@ -25,6 +37,6 @@ name = "Casey Kuhlman"
 email = "casey@erisindustries.com"
 
 [location]
-repository = "github.com/tutumcloud/logrotate"
-
-[machine]
+dockerfile = "https://github.com/tutumcloud/logrotate/blob/master/Dockerfile"
+repository = "https://github.com/tutumcloud/logrotate"
+website = ""

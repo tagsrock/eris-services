@@ -1,6 +1,3 @@
-# Eris service definition for tinydns
-# Start it with `$ eris services start tinydns`
-
 # For more information on configurations, see the services specification:
 # https://docs.erisindustries.com/documentation/eris-cli/latest/services_specification/
 
@@ -10,19 +7,28 @@
 # This is a TOML config file.
 # For more information, see https://github.com/toml-lang/toml
 
+name        = "tinydns"
+description = """
+tinydns is a DNS server. It accepts iterative DNS queries from hosts around the Internet, and responds with locally configured information.
+
+This eris service is used by mindy, for tinydns on a blockchain.
+"""
+
+status = "ready"
+
 [service]
 name        = "tinydns"
 image       = "quay.io/eris/tinydns"
 ports       = [ "53/udp" ]
 data_container = true
+restart = "always"
 
 [maintainer]
 name  = "Ethan Buchman"
 email = "ethan@erisindustries.com"
 
 [location]
-repository = "github.com/eris-ltd/mindy/tree/master/tinydns"
+dockerfile = "https://github.com/eris-ltd/mindy/blob/master/tinydns/Dockerfile"
+repository = ""
+website = "https://cr.yp.to/djbdns/tinydns.html"
 
-[machine]
-include  = [ "docker" ]
-requires = [ "" ]
