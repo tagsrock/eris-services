@@ -11,6 +11,13 @@
 # For more information, see https://github.com/toml-lang/toml
 
 name           = "btcd"
+description = """
+An alternative full bitcoin (core) implementation written in golang by Conformal.
+
+This eris service will run a full bitcoin node and connect to the bitcoin network.
+"""
+
+status = "beta"
 
 [service]
 image          = "quay.io/eris/btcd"
@@ -19,10 +26,13 @@ ports          = [ "8333:8333", "8334:8334" ]
 volumes        = [  ]
 environment    = [  ]
 cpu_shares     = 10
+restart = "always"
 
 [maintainer]
 name = "Eris Industries"
 email = "support@erisindustries.com"
 
 [location]
-repository = "github.com/eris-ltd/common/blob/master/docker/btcd/Dockerfile"
+dockerfile = "https://github.com/eris-ltd/common/blob/master/docker/btcd/Dockerfile"
+repository = "https://github.com/btcsuite/btcd"
+website = "https://blog.conformal.com/category/btcd/"

@@ -11,12 +11,20 @@
 # For more information, see https://github.com/toml-lang/toml
 
 name = "watchtower"
+description = """
+Automatically updates running Docker containers.
+
+This eris service will watch your containers and update them whenever the base image is updated.
+"""
+
+status = "ready"
 
 [service]
 name = "watchtower"
 image = "centurylink/watchtower"
 data_container = false
 volumes = [ "/var/run/docker.sock:/var/run/docker.sock" ]
+restart = "always"
 
 [dependencies]
 
@@ -25,4 +33,6 @@ name = "Casey Kuhlman"
 email = "casey@erisindustries.com"
 
 [location]
-repository = "github.com/CenturyLinkLabs/watchtower"
+dockerfile = "https://github.com/CenturyLinkLabs/watchtower/blob/master/Dockerfile"
+repository = "https://github.com/CenturyLinkLabs/watchtower"
+website = "https://labs.ctl.io/projects/watchtower/"

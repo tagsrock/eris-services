@@ -1,6 +1,3 @@
-# Eris service definition for eth
-# Start it with `$ eris services start eth`
-
 # For more information on configurations, see the services specification:
 # https://docs.erisindustries.com/documentation/eris-cli/latest/services_specification/
 
@@ -11,6 +8,11 @@
 # For more information, see https://github.com/toml-lang/toml
 
 name           = "eth"
+description = """
+An Ethereum full node. Please set appropriate environment variables.
+"""
+
+status = "alpha"
 
 [service]
 image          = "quay.io/eris/eth"
@@ -24,10 +26,14 @@ environment    = [
   "MAKEACCT=true",
   "PASSWORD=whatever"
 ]
+restart = "always"
 
 [maintainer]
 name = "Eris Industries"
 email = "support@erisindustries.com"
 
 [location]
-repository = "github.com/eris-ltd/common/blob/master/docker/eth/Dockerfile"
+dockerfile = "https://github.com/eris-ltd/common/blob/master/docker/eth/Dockerfile"
+repository = "https://github.com/ethereum/go-ethereum"
+website = "https://www.ethereum.org/"
+

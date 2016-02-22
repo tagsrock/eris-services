@@ -1,6 +1,3 @@
-# Eris service definition for mindy
-# Start it with `$ eris services start mindy`
-
 # For more information on configurations, see the services specification:
 # https://docs.erisindustries.com/documentation/eris-cli/latest/services_specification/
 
@@ -9,6 +6,17 @@
 
 # This is a TOML config file.
 # For more information, see https://github.com/toml-lang/toml
+name           = "mindy"
+description = """
+Tinydns on a blockchain! Mindy extends djb's tinydns by updating the zone file with records fetch from a blockchain
+
+This eris service currently uses a tendermint chain as its consensus engine.
+
+See the testnet at: pinkpenguin.interblock.io:46657/list_names
+"""
+
+status = "alpha"
+
 
 chain 	       = "$chain:chain:l"
 
@@ -16,6 +24,7 @@ chain 	       = "$chain:chain:l"
 name           = "mindy"
 image          = "quay.io/eris/mindy"
 environment    = [ "UPDATE_EVERY=5" ]
+restart = "always"
 
 [dependencies]
 services = ["tinydns::v"]
@@ -25,4 +34,6 @@ name = "Ethan Buchman"
 email = "ethan@erisindustries.com"
 
 [location]
-repository = "github.com/eris-ltd/mindy"
+dockerfile = "https://github.com/eris-ltd/mindy/blob/master/Dockerfile"
+repository = "https://github.com/eris-ltd/mindy"
+website = "https://github.com/eris-ltd/mindy/wiki"
