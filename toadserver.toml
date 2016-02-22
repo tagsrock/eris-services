@@ -17,7 +17,7 @@
 
 name = "toadserver"
 description = """
-A smart contract and IPFS Backed Download Server.
+A smart contract and IPFS Backed File Server. It is used internally as part of the `eris init` sequence.
 """
 
 status = "alpha"

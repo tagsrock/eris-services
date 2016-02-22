@@ -9,12 +9,12 @@
 
 name = "keys"
 description = """
-Eris' key signing daemon. Generate and manage keys for your application.
+Eris keys is meant for quick prototyping. You must replace it with a hardened key signing daemon to use in production. Eris does not intend to harden this for production, but rather will keep it as a rapid prototyping server.
 
 This service is usually linked to a chain and/or an application. Its functionality is wrapped by `eris keys`.
 """
 
-status = "alpha"
+status = "unfit for production"
 
 [service]
 image = "quay.io/eris/keys"

@@ -12,7 +12,7 @@ description = """
 An Ethereum full node. Please set appropriate environment variables.
 """
 
-status = "alpha"
+status = "ready"
 
 [service]
 image          = "quay.io/eris/eth"

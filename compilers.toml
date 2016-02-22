@@ -14,7 +14,7 @@ Eris' LLLC (Lovely Little Language Compile) Server.
 This eris service compiles smart contract languages.
 """
 
-status = "alpha"
+status = "beta"
 
 [service]
 image          = "quay.io/eris/compilers"

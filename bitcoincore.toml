@@ -14,7 +14,7 @@ The original implementation of Bitcoin. Its putative default functionality is co
 This eris service will connect to the bitcoin network.
 """
 
-status = "alpha"
+status = "ready"
 
 [service]
 image          = "quay.io/eris/bitcoincore"

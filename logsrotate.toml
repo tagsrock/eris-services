@@ -14,7 +14,7 @@ name = "logrotate"
 description = """
 Truncates docker container logs when the grow in size.
 
-This eris service can also be run with a flag on `eris chains new | start`
+This eris service can also be run by adding the `--logsrotate` flag on `eris chains new | start`
 
 It is basically essential for long-running chain nodes.
 

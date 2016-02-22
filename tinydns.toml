@@ -11,10 +11,10 @@ name        = "tinydns"
 description = """
 tinydns is a DNS server. It accepts iterative DNS queries from hosts around the Internet, and responds with locally configured information.
 
-This eris service is used by mindy, for tinydns on a blockchain
+This eris service is used by mindy, for tinydns on a blockchain.
 """
 
-status = "alpha"
+status = "ready"
 
 [service]
 name        = "tinydns"
