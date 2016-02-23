@@ -20,7 +20,7 @@ status = "unfit for production"
 image = "quay.io/eris/keys"
 data_container = true
 exec_host = "ERIS_KEYS_HOST"
-restart = "always"
+#restart = "always"
 
 [location]
 dockerfile = "https://github.com/eris-ltd/eris-keys/blob/master/Dockerfile"
