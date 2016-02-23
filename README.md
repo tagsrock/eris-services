@@ -1,5 +1,5 @@
 # eris-services
-Service Definition Files for the Eris Platform
+Service Definition Files for the Eris Platform. See [here](https://docs.erisindustries.com/documentation/eris-cli/0.11.0/services_specification/) for the services specification vis-a-vis `$ docker run`.
 
 WARNING: Changing any of the `.toml` files in this repo will cause eris-cli tests (`/initialize`) to fail.
 
