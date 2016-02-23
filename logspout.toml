@@ -25,7 +25,6 @@ entry_point = "/bin/logspout"
 command = "syslog://logs2.papertrailapp.com:XXXXX" 
 ports = [ "8000:8000" ]
 volumes = [ "/var/run/docker.sock:/tmp/docker.sock" ]
-restart = "always"
 
 [dependencies]
 

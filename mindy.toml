@@ -24,7 +24,6 @@ chain 	       = "$chain:chain:l"
 name           = "mindy"
 image          = "quay.io/eris/mindy"
 environment    = [ "UPDATE_EVERY=5" ]
-restart = "always"
 
 [dependencies]
 services = ["tinydns::v"]

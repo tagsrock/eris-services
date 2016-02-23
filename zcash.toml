@@ -17,7 +17,6 @@ data_container = true
 command = "/var/zcash/src/zcashd -conf=/home/eris/.zcash/bitcoin.conf -datadir=/home/eris/.zcash -daemon"
 ports = [ "8332", "8333:8333" ]
 environment = [ "EXEC_HOST=zcash" ]
-restart = "always"
 
 [dependencies]
 
