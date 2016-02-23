@@ -20,7 +20,6 @@ status = "alpha"
 name = "bigchaindb"
 image = "quay.io/eris/bigchaindb"
 environment = [ "BIGCHAIN_DATABASE_HOST=rethinkdb" ]
-restart = "always"
 
 command = "bigchaindb start"
 

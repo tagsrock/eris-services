@@ -22,7 +22,6 @@ data_container = true
 ports          = [ "8333:8333", "8334:8334" ]
 volumes        = [  ]
 environment    = [  ]
-restart = "always"
 
 [maintainer]
 name = "Eris Industries"

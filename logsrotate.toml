@@ -28,7 +28,6 @@ name = "logrotate"
 image = "tutum/logrotate"
 data_container = false
 volumes = [ "/var/lib/docker/containers:/var/lib/docker/containers:rw" ]
-restart = "always"
 
 [dependencies]
 

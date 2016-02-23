@@ -21,7 +21,6 @@ name        = "tinydns"
 image       = "quay.io/eris/tinydns"
 ports       = [ "53/udp" ]
 data_container = true
-restart = "always"
 
 [maintainer]
 name  = "Ethan Buchman"

@@ -24,7 +24,6 @@ name = "watchtower"
 image = "centurylink/watchtower"
 data_container = false
 volumes = [ "/var/run/docker.sock:/var/run/docker.sock" ]
-restart = "always"
 
 [dependencies]
 

@@ -14,7 +14,6 @@ image = "rethinkdb"
 ports = [ "9999:8080", "28015"]
 #volumes_from = [ "/data" ]
 data_container = true
-restart = "always"
 
 [dependencies]
 

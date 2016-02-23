@@ -26,7 +26,6 @@ ports          = [ "8333:8333", "8334:8334" ]
 volumes        = [  ]
 environment    = [  ]
 cpu_shares     = 10
-restart = "always"
 
 [maintainer]
 name = "Eris Industries"
