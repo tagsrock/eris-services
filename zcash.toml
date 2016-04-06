@@ -7,6 +7,7 @@ Zcash is a decentralized and open source cryptocurrency that aims to set a new s
 
 The eris service will connect into the alpha testnet for zcash. Please first generate a new key and modify the bitcoin.conf file to your liking before running the node.
 """
+
 status = "alpha"
 
 [service]
@@ -24,4 +25,6 @@ name = "Casey Kuhlman"
 email = "casey@erisindustries.com"
 
 [location]
-repository = "github.com/eris-ltd/common/blob/master/docker/zcash/Dockerfile"
+dockerfile = "https://github.com/eris-ltd/common/blob/master/docker/zcash/Dockerfile"
+repository = "https://github.com/zcash/zcash"
+website = "https://z.cash/"
