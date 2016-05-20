@@ -1,0 +1,38 @@
+# For more information on configurations, see the services specification:
+# https://docs.erisindustries.com/documentation/eris-cli/latest/services_specification/
+
+# These fields marshal roughly into the `$ docker run` command, see:
+# https://docs.docker.com/engine/reference/run/
+
+# This is a TOML config file.
+# For more information, see https://github.com/toml-lang/toml
+
+name = "logspout"
+description = """
+Logspout is a log router for Docker containers. It attaches to all containers on a host then routes their logs wherever you want.
+
+This eris service requires configuration of the `command` string. See repository for more information. 
+"""
+
+status = "ready"
+
+
+[service]
+name = "logspout"
+image = "gliderlabs/logspout"
+data_container = false
+entry_point = "/bin/logspout"
+command = "syslog://logs2.papertrailapp.com:XXXXX" 
+ports = [ "8000:8000" ]
+volumes = [ "/var/run/docker.sock:/tmp/docker.sock" ]
+
+[dependencies]
+
+[maintainer]
+name = "Casey Kuhlman"
+email = "casey@erisindustries.com"
+
+[location]
+dockerfile = "https://github.com/gliderlabs/logspout/blob/master/Dockerfile"
+repository = "https://github.com/gliderlabs/logspout"
+website = ""
