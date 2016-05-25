@@ -17,7 +17,7 @@ This service is usually linked to a chain and/or an application. Its functionali
 status = "unfit for production"
 
 [service]
-image = "quay.io/keys:arm"
+image = "quay.io/eris/keys:arm"
 data_container = true
 exec_host = "ERIS_KEYS_HOST"
 #restart = "always"
