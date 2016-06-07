@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-#XXX todo re-write this
 # ----------------------------------------------------------
 # PURPOSE .
 
@@ -84,10 +83,7 @@ done
 }
 
 test_teardown(){
-  if [ "$ci" = false ]
-  then	
-    eris clean
-  fi
+  eris clean -y
 
   if [ "$test_exit" -eq 0 ]
   then
