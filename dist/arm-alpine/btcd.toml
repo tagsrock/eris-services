@@ -20,7 +20,7 @@ This eris service will run a full bitcoin node and connect to the bitcoin networ
 status = "beta"
 
 [service]
-image          = "quay.io/eris/btcd:arm-alpine"
+image          = "quay.io/eris/btcd:arm"
 data_container = true
 ports          = [ "8333:8333", "8334:8334" ]
 volumes        = [  ]
