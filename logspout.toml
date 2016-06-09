@@ -19,10 +19,10 @@ status = "ready"
 
 [service]
 name = "logspout"
-image = "gliderlabs/logspout"
+image = "gliderlabs/logspout:v2"
 data_container = false
 entry_point = "/bin/logspout"
-command = "syslog://logs2.papertrailapp.com:XXXXX" 
+command = "syslog://logs2.papertrailapp.com:XXXXX"
 ports = [ "8000:8000" ]
 volumes = [ "/var/run/docker.sock:/tmp/docker.sock" ]
 
