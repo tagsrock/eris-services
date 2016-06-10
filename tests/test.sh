@@ -72,12 +72,18 @@ for service in ${all_services[@]}; do
 	fi
 
 	eris services start $serv
-	#eris services exec $serv "ls" -p #randomize port
+	#eris services exec $serv "some way of testing a service" -p #randomize port
+	sleep 30
+	is_running=$(eris services ls --running --format '{{.ShortName}}'
+	if [ "$is_running" -ne "$serv" ]
+	then
+	  test_exit=1
+	fi
+	
 	eris services stop $serv
  	if [ $? -ne 0 ]
  	then
      	  test_exit=1
-   	  return 1
  	fi
 done
 }
