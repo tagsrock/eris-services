@@ -23,6 +23,6 @@ exec_host = "ERIS_KEYS_HOST"
 #restart = "always"
 
 [location]
-dockerfile = "https://github.com/eris-ltd/eris-keys/blob/master/DockerfileArm"
+dockerfile = "https://github.com/eris-ltd/eris-keys/blob/master/Dockerfile.armhf"
 repository = "https://github.com/eris-ltd/eris-keys"
 website = "https://docs.erisindustries.com/documentation/ekeys/"
