@@ -32,6 +32,6 @@ name = "Eris Industries"
 email = "support@erisindustries.com"
 
 [location]
-dockerfile = "https://github.com/eris-ltd/common/blob/master/docker/btcd/Dockerfile"
+dockerfile = "https://github.com/eris-ltd/common/blob/master/docker-arm/btcd/Dockerfile"
 repository = "https://github.com/btcsuite/btcd"
 website = "https://blog.conformal.com/category/btcd/"
