@@ -1,5 +1,5 @@
-# Eris service definition for logsrotate
-# Start it with `$ eris services start logsrotate`
+# Eris service definition for logrotate
+# Start it with `$ eris services start logrotate`
 
 # For more information on configurations, see the services specification:
 # https://docs.erisindustries.com/documentation/eris-cli/latest/services_specification/
@@ -14,7 +14,7 @@ name = "logrotate"
 description = """
 Truncates docker container logs when the grow in size.
 
-This eris service can also be run by adding the `--logsrotate` flag on `eris chains new | start`
+This eris service can also be run by adding the `--logrotate` flag on `eris chains new | start`
 
 It is basically essential for long-running chain nodes.
 

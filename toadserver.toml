@@ -26,16 +26,16 @@ chain = "$chain:toad:l"
 
 [service]
 name = "toadserver"
-image = "quay.io/eris/toadserver"
+image = "quay.io/eris/toadserver:0.12.0"
 ports = [ "11113:11113" ]
 volumes = [  ]
 environment = [  
 	"MINTX_NODE_ADDR=http://toad:46657/",
-	"MINTX_CHAINID=$CHAIN_NAME", 
+	"MINTX_CHAINID=$chain", 
 	"MINTX_SIGN_ADDR=http://keys:4767", 
 	"MINTX_PUBKEY=$PUB_KEY",
 	"ERIS_IPFS_HOST=http://ipfs",
-	"TOADSERVER_IPFS_NODES=ip1,ip2,ip3"
+	#"TOADSERVER_IPFS_NODES=ip1,ip2,ip3"
 ]
 
 [dependencies]
