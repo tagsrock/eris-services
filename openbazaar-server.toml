@@ -30,7 +30,7 @@ name = "Eris Industries"
 email = "support@erisindustries.com"
 
 [location]
-dockerfile = "https://github.com/eris-ltd/common/blob/master/docker/openbazaar-server/Dockerfile"
+dockerfile = "https://github.com/eris-ltd/eris-services/blob/master/docker/x86/openbazaar-server/Dockerfile"
 repository = "https://github.com/OpenBazaar/OpenBazaar-Server"
 website = "https://openbazaar.org/"
 

@@ -28,6 +28,6 @@ name = "Eris Industries"
 email = "support@erisindustries.com"
 
 [location]
-dockerfile = "https://github.com/eris-ltd/common/blob/master/docker/compilers/Dockerfile"
+dockerfile = "https://github.com/eris-ltd/eris-services/blob/master/docker/x86/compilers/Dockerfile"
 repository = "https://github.com/eris-ltd/eris-compilers"
 website = ""

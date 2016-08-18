@@ -31,6 +31,6 @@ name = "Zach Ramsay"
 email = "zach@erisindustries.com"
 
 [location]
-dockerfile =  "https://github.com/eris-ltd/common/blob/master/docker/bigchaindb/Dockerfile"
+dockerfile =  "https://github.com/eris-ltd/eris-services/blob/master/docker/x86/bigchaindb/Dockerfile"
 repository = "https://github.com/bigchaindb/bigchaindb"
 website = "https://www.bigchaindb.com/"
