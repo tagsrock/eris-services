@@ -25,6 +25,6 @@ name = "Casey Kuhlman"
 email = "casey@erisindustries.com"
 
 [location]
-dockerfile = "https://github.com/eris-ltd/eris-services/blob/master/docker/z86/zcash/Dockerfile"
+dockerfile = "https://github.com/eris-ltd/eris-services/blob/master/docker/x86/zcash/Dockerfile"
 repository = "https://github.com/zcash/zcash"
 website = "https://z.cash/"
