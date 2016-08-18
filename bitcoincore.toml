@@ -28,7 +28,7 @@ name = "Eris Industries"
 email = "support@erisindustries.com"
 
 [location]
-dockerfile = "https://github.com/eris-ltd/common/blob/master/docker/bitcoincore/Dockerfile"
+dockerfile = "https://github.com/eris-ltd/eris-services/blob/master/docker/x86/bitcoincore/Dockerfile"
 repository = "https://github.com/bitcoin/bitcoin"
 website = "https://bitcoincore.org/"
 

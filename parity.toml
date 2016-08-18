@@ -33,7 +33,7 @@ name = "Eris Industries"
 email = "support@erisindustries.com"
 
 [location]
-dockerfile = "https://github.com/eris-ltd/common/blob/master/docker/parity/Dockerfile"
+dockerfile = "https://github.com/eris-ltd/eris-services/blob/master/docker/x86/parity/Dockerfile"
 repository = "https://github.com/ethereum/go-ethereum"
 website = "https://www.ethereum.org/"
 

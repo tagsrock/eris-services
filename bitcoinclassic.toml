@@ -28,7 +28,7 @@ name = "Eris Industries"
 email = "support@erisindustries.com"
 
 [location]
-dockerfile = "https://github.com/eris-ltd/common/blob/master/docker/bitcoinclassic/Dockerfile"
+dockerfile = "https://github.com/eris-ltd/eris-services/blob/master/docker/x86/bitcoinclassic/Dockerfile"
 repository = "https://github.com/bitcoinclassic/bitcoinclassic"
 website = "https://bitcoinclassic.com/"
 
