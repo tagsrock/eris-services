@@ -1,5 +1,5 @@
 FROM quay.io/eris/tools:arm
-MAINTAINER Eris Industries <support@erisindustries.com>
+MAINTAINER Monax Industries <support@monax.io>
 
 RUN echo "setting up node, npm, and io.js" && \
   curl -sL https://deb.nodesource.com/setup_4.x | bash - > /dev/null && \

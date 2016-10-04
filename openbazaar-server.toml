@@ -1,5 +1,5 @@
 # For more information on configurations, see the services specification:
-# https://docs.erisindustries.com/documentation/eris-cli/latest/services_specification/
+# https://monax.io/docs/documentation/cli/latest/specifications/services_specification/
 
 # These fields marshal roughly into the `$ docker run` command, see:
 # https://docs.docker.com/engine/reference/run/
@@ -26,8 +26,8 @@ expose = ["9300"]
 environment = [ "RUNSH_ARGS=--disable-upnp -q 8888 -p 12345" ]
 
 [maintainer]
-name = "Eris Industries"
-email = "support@erisindustries.com"
+name = "Monax Industries"
+email = "support@monax.io"
 
 [location]
 dockerfile = "https://github.com/eris-ltd/eris-services/blob/master/docker/x86/openbazaar-server/Dockerfile"

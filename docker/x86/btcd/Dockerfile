@@ -1,5 +1,5 @@
 FROM quay.io/eris/base
-MAINTAINER Eris Industries <support@erisindustries.com>
+MAINTAINER Monax Industries <support@monax.io>
 
 RUN go get -u github.com/btcsuite/btcd/...
 

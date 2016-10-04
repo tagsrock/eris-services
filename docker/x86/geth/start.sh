@@ -2,7 +2,7 @@
 set -e
 
 # Note, most of this is based on this tutorial -> http://adeduke.com/2015/08/how-to-create-a-private-ethereum-chain/
-#   ether-ites, please let us know if and when this needs to be updated for your purposes. <3 Eris.
+# ether-ites, please let us know if and when this needs to be updated for your purposes. <3 Monax.
 
 #------------------------------------------------
 # set and export directories

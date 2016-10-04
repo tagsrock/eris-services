@@ -10,8 +10,8 @@ user = "root"
 services = ["keys"]
 
 [maintainer]
-name = "Eris Industries"
-email = "support@erisindustries.com"
+name = "Monax Industries"
+email = "support@monax.io"
 
 [location]
 repository = "github.com/eris-ltd/eris-services"

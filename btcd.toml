@@ -1,8 +1,5 @@
-# Eris service definition for btcd
-# Start it with `$ eris services start btcd`
-
 # For more information on configurations, see the services specification:
-# https://docs.erisindustries.com/documentation/eris-cli/latest/services_specification/
+# https://monax.io/docs/documentation/cli/latest/specifications/services_specification/
 
 # These fields marshal roughly into the `$ docker run` command, see:
 # https://docs.docker.com/engine/reference/run/
@@ -28,8 +25,8 @@ environment    = [  ]
 cpu_shares     = 10
 
 [maintainer]
-name = "Eris Industries"
-email = "support@erisindustries.com"
+name = "Monax Industries"
+email = "support@monax.io"
 
 [location]
 dockerfile = "https://github.com/eris-ltd/eris-services/blob/master/docker/x86/btcd/Dockerfile"

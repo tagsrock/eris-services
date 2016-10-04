@@ -1,5 +1,5 @@
 # For more information on configurations, see the services specification:
-# https://docs.erisindustries.com/documentation/eris-cli/latest/services_specification/
+# https://monax.io/docs/documentation/cli/latest/specifications/services_specification/
 
 # These fields marshal roughly into the `$ docker run` command, see:
 # https://docs.docker.com/engine/reference/run/
@@ -9,7 +9,7 @@
 
 name = "keys"
 description = """
-Eris keys is meant for quick prototyping. You must replace it with a hardened key signing daemon to use in production. Eris does not intend to harden this for production, but rather will keep it as a rapid prototyping server.
+eris-keys is meant for quick prototyping. You must replace it with a hardened key signing daemon to use in production. Monax does not intend to harden this for production, but rather will keep it as a rapid prototyping server.
 
 This service is usually linked to a chain and/or an application. Its functionality is wrapped by `eris keys`.
 """
@@ -25,4 +25,4 @@ exec_host = "ERIS_KEYS_HOST"
 [location]
 dockerfile = "https://github.com/eris-ltd/eris-keys/blob/master/Dockerfile.armhf"
 repository = "https://github.com/eris-ltd/eris-keys"
-website = "https://docs.erisindustries.com/documentation/ekeys/"
+website = "https://monax.io/docs/documentation/keys/latest/eris-keys/"

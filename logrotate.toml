@@ -1,8 +1,5 @@
-# Eris service definition for logrotate
-# Start it with `$ eris services start logrotate`
-
 # For more information on configurations, see the services specification:
-# https://docs.erisindustries.com/documentation/eris-cli/latest/services_specification/
+# https://monax.io/docs/documentation/cli/latest/specifications/services_specification/
 
 # These fields marshal roughly into the `$ docker run` command, see:
 # https://docs.docker.com/engine/reference/run/
@@ -14,7 +11,7 @@ name = "logrotate"
 description = """
 Truncates docker container logs when the grow in size.
 
-This eris service can also be run by adding the `--logrotate` flag on `eris chains new | start`
+This eris service can also be run by adding the `--logrotate` flag on `eris chains start`
 
 It is basically essential for long-running chain nodes.
 
@@ -32,8 +29,8 @@ volumes = [ "/var/lib/docker/containers:/var/lib/docker/containers:rw" ]
 [dependencies]
 
 [maintainer]
-name = "Casey Kuhlman"
-email = "casey@erisindustries.com"
+name = "Monax Industries"
+email = "support@monax.io"
 
 [location]
 dockerfile = "https://github.com/tutumcloud/logrotate/blob/master/Dockerfile"

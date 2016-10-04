@@ -1,5 +1,5 @@
 FROM quay.io/eris/node
-MAINTAINER Eris Industries <support@erisindustries.com>
+MAINTAINER Monax Industries <support@monax.io>
 
 RUN npm install --global gulp
 
