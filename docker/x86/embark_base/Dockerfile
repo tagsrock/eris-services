@@ -1,5 +1,5 @@
 FROM quay.io/eris/gulp
-MAINTAINER Eris Industries <support@erisindustries.com>
+MAINTAINER Monax Industries <support@monax.io>
 
 USER root
 

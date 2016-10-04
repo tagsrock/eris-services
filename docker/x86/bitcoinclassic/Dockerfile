@@ -1,5 +1,5 @@
 FROM quay.io/eris/tools
-MAINTAINER Eris Industries <support@erisindustries.com>
+MAINTAINER Monax Industries <support@monax.io>
 
 ENV NAME bitcoinclassic
 

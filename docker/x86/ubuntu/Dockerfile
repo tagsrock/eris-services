@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER Eris Industries <support@erisindustries.com>
+MAINTAINER Monax Industries <support@monax.io>
 
 # shut up debian
 ENV DEBIAN_FRONTEND noninteractive
