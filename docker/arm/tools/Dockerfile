@@ -1,5 +1,5 @@
 FROM quay.io/eris/ubuntu:arm
-MAINTAINER Eris Industries <support@erisindustries.com>
+MAINTAINER Monax Industries <support@monax.io>
 
 RUN apt-get update -qq && \
   apt-get install -qq -y software-properties-common && \

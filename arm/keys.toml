@@ -1,5 +1,5 @@
 # For more information on configurations, see the services specification:
-# https://docs.erisindustries.com/documentation/eris-cli/latest/services_specification/
+# https://monax.io/docs/documentation/cli/latest/specifications/services_specification/
 
 # These fields marshal roughly into the `$ docker run` command, see:
 # https://docs.docker.com/engine/reference/run/
@@ -25,4 +25,4 @@ exec_host = "ERIS_KEYS_HOST"
 [location]
 dockerfile = "https://github.com/eris-ltd/eris-keys/blob/master/Dockerfile.armhf"
 repository = "https://github.com/eris-ltd/eris-keys"
-website = "https://docs.erisindustries.com/documentation/ekeys/"
+website = "https://monax.io/docs/documentation/keys/latest/eris-keys/"
