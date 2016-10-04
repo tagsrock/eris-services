@@ -18,8 +18,8 @@ data_container = true
 [dependencies]
 
 [maintainer]
-name = "Zach Ramsay"
-email = "zach@erisindustries.com"
+name = "Monax Industries"
+email = "support@monax.io"
 
 [location]
 dockerfile = "https://github.com/dockerfile/rethinkdb/blob/master/Dockerfile"

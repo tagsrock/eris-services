@@ -1,8 +1,5 @@
-# Eris service definition for watchtower
-# Start it with `$ eris services start watchtower`
-
 # For more information on configurations, see the services specification:
-# https://docs.erisindustries.com/documentation/eris-cli/latest/services_specification/
+# https://monax.io/docs/documentation/cli/latest/specifications/services_specification/
 
 # These fields marshal roughly into the `$ docker run` command, see:
 # https://docs.docker.com/engine/reference/run/
@@ -28,8 +25,8 @@ volumes = [ "/var/run/docker.sock:/var/run/docker.sock" ]
 [dependencies]
 
 [maintainer]
-name = "Casey Kuhlman"
-email = "casey@erisindustries.com"
+name = "Monax Industries"
+email = "support@monax.io"
 
 [location]
 dockerfile = "https://github.com/CenturyLinkLabs/watchtower/blob/master/Dockerfile"
