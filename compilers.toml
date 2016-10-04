@@ -9,7 +9,7 @@
 
 name           = "compilers"
 description = """
-Eris' LLLC (Lovely Little Language Compile) Server.
+Monax's Solidity Compiler Server.
 
 This eris service compiles smart contract languages.
 """

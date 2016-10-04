@@ -1,5 +1,5 @@
 FROM quay.io/eris/tools
-MAINTAINER Eris Industries <support@erisindustries.com>
+MAINTAINER Monax Industries <support@monax.io>
 
 # export rust LIBRARY_PATH
 ENV LIBRARY_PATH /usr/local/lib
