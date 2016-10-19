@@ -1,0 +1,34 @@
+# For more information on configurations, see the services specification:
+# https://monax.io/docs/documentation/cli/latest/specifications/services_specification/
+
+# These fields marshal roughly into the `$ docker run` command, see:
+# https://docs.docker.com/engine/reference/run/
+
+# This is a TOML config file.
+# For more information, see https://github.com/toml-lang/toml
+
+name           = "btcd"
+description = """
+An alternative full bitcoin (core) implementation written in golang by Conformal.
+
+This eris service will run a full bitcoin node and connect to the bitcoin network.
+"""
+
+status = "beta"
+
+[service]
+image          = "quay.io/eris/btcd"
+data_container = true
+ports          = [ "8333:8333", "8334:8334" ]
+volumes        = [  ]
+environment    = [  ]
+cpu_shares     = 10
+
+[maintainer]
+name = "Monax Industries"
+email = "support@monax.io"
+
+[location]
+dockerfile = "https://github.com/eris-ltd/eris-services/blob/master/docker/x86/btcd/Dockerfile"
+repository = "https://github.com/btcsuite/btcd"
+website = "https://blog.conformal.com/category/btcd/"

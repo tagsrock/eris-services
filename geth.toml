@@ -1,0 +1,38 @@
+# For more information on configurations, see the services specification:
+# https://monax.io/docs/documentation/cli/latest/specifications/services_specification/
+
+# These fields marshal roughly into the `$ docker run` command, see:
+# https://docs.docker.com/engine/reference/run/
+
+# This is a TOML config file.
+# For more information, see https://github.com/toml-lang/toml
+
+name           = "geth"
+description = """
+An Ethereum full node (go-ethereum). Please set appropriate environment variables.
+"""
+
+status = "ready"
+
+[service]
+image          = "quay.io/eris/geth"
+data_container = true
+ports          = [ "8545:8545", "30303:30303" ]
+volumes        = [  ]
+environment    = [
+  "ACCOUNT=0",
+  "CHAIN_ID=ethereum",
+  "LOG_LEVEL=2",
+  "MAKEACCT=true",
+  "PASSWORD=whatever"
+]
+
+[maintainer]
+name = "Monax Industries"
+email = "support@monax.io"
+
+[location]
+dockerfile = "https://github.com/eris-ltd/eris-services/blob/master/docker/x86/geth/Dockerfile"
+repository = "https://github.com/ethereum/go-ethereum"
+website = "https://www.ethereum.org/"
+
