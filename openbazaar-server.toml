@@ -1,0 +1,36 @@
+# For more information on configurations, see the services specification:
+# https://monax.io/docs/documentation/cli/latest/specifications/services_specification/
+
+# These fields marshal roughly into the `$ docker run` command, see:
+# https://docs.docker.com/engine/reference/run/
+
+# This is a TOML config file.
+# For more information, see https://github.com/toml-lang/toml
+
+name = "openbazaar-server"
+description = """
+A free Market for all. No Fees. No Restrictions.
+
+The eris service runs an OpenBazaar Server.
+"""
+
+status = "beta"
+
+[service]
+name = "openbazaar"
+image = "quay.io/eris/openbazaar-server:latest"
+data_container = true
+host_name = "ob"
+ports = ["8888:8888", "12345:12345"]
+expose = ["9300"]
+environment = [ "RUNSH_ARGS=--disable-upnp -q 8888 -p 12345" ]
+
+[maintainer]
+name = "Monax Industries"
+email = "support@monax.io"
+
+[location]
+dockerfile = "https://github.com/eris-ltd/eris-services/blob/master/docker/x86/openbazaar-server/Dockerfile"
+repository = "https://github.com/OpenBazaar/OpenBazaar-Server"
+website = "https://openbazaar.org/"
+

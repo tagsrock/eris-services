@@ -1,0 +1,39 @@
+# For more information on configurations, see the services specification:
+# https://monax.io/docs/documentation/cli/latest/specifications/services_specification/
+
+# These fields marshal roughly into the `$ docker run` command, see:
+# https://docs.docker.com/engine/reference/run/
+
+# This is a TOML config file.
+# For more information, see https://github.com/toml-lang/toml
+
+name = "tor"
+description = """
+Run an tor exit relay by starting this eris service. Edit the command string to run a bridge or middle relay.
+
+Check that it is running via: https://atlas.torproject.org/
+"""
+
+status = "ready"
+
+[service]
+name = "tor"
+image = "quay.io/eris/tor-relay"
+ports = [ "9001:9001" ]
+data_container = false
+volumes = [ "/etc/localtime:/etc/localtime" ]
+restart = "always"
+
+# replace 'exit' with 'bridge' or 'middle'
+# depending on the type of relay you'd like to run
+command = "-f /etc/tor/torrc.exit"
+
+[maintainer]
+name = "Monax Industries"
+email = "support@monax.io"
+
+[location]
+dockerfile = "https://github.com/jfrazelle/dockerfiles/blob/master/tor-relay/Dockerfile"
+repository = "https://github.com/torproject/tor" #unofficial
+website = "https://www.torproject.org/"
+# see also https://blog.jessfraz.com/post/running-a-tor-relay-with-docker/
